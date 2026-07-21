@@ -94,6 +94,9 @@ def sbnd_data(ax, x, y, ha='left', va='top', fontsize=30):
 def sbnd_official(ax, x, y, fontsize=30):
     ax.text(x, y, f"{sbnd_watermark()}", horizontalalignment='left', verticalalignment='top', transform=ax.transAxes, fontsize=fontsize,  **{'fontname':'Helvetica'})
 
+def sbnd_sim(ax, x, y, fontsize=30):
+    ax.text(x, y, f"{sbnd_watermark()} Simulation,\n Work in Progress", horizontalalignment='left', verticalalignment='top', transform=ax.transAxes, fontsize=fontsize,  **{'fontname':'Helvetica'})
+
 # =========================
 # Layout helpers
 # =========================
